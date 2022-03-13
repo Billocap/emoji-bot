@@ -8,7 +8,7 @@ module.exports = Command(
     const emojiNames = AsciiEmojiParser
       .getKeywords()
       .sort()
-      .map(emoji => `_${emoji}_`)
+      .map(emoji => `**${emoji}**`)
       .join(", ")
     
     interaction.reply({
